@@ -1,2 +1,4 @@
+github.com/a-h/templ v0.2.543 h1:8YyLvyUtf0/IE2nIwZ62Z/m2o2NqwhnMynzOL78Lzbk=
+github.com/a-h/templ v0.2.543/go.mod h1:jP908DQCwI08IrnTalhzSEH9WJqG/Q94+EODQcJGFUA=
 github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
 github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=

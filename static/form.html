@@ -5,11 +5,19 @@
   <title>Siva's Shit</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" href="/styles/out.css">
+  <link type="text/css" href="/styles/out.css" rel="stylesheet">
+  <script src="/js/htmx.min.js"></script>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+  </style>
+
 </head>
 
 <body data-theme="dim">
-  <form action="/static/thankyou.html" hx-boost="true" enctype="text/plain" method="post">
+  <form action="/static/thankyou.html" enctype="text/plain" method="post">
     <fieldset>
       <legend>Your Personal Details</legend>
       <input type="text" name="name" />
@@ -21,7 +29,10 @@
       female
       </input>
     </fieldset>
-    <button type="submit" class="btn btn-accent">Submit!</button>
+    <button type="button" class="btn btn-square btn-block" hx-get="/" hx-swap="outerHTML">
+      <span class="loading loading-spinner"></span>
+      Submit!
+    </button>
   </form>
 </body>
 
